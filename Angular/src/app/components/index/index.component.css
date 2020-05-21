@@ -1,0 +1,15 @@
+.left{
+    float: left;
+}
+
+.right{
+    float: left;
+}
+
+.perbtn{
+    padding-left: 13vw;
+    padding-right: 13vw;
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+    font-size: 11.5vw;
+}
