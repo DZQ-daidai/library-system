@@ -1,0 +1,19 @@
+.container{
+    text-align: center;
+}
+
+h1{
+    font-size: 7vw;
+    font-weight: lighter;
+}
+
+.username-container{
+    padding-top: 50px;
+    width: 50vw;
+    font-size: 3vw;
+}
+
+.password-container{
+    width: 50vw;
+    font-size: 3vw;
+}
