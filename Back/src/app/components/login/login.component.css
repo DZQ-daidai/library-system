@@ -1,5 +1,6 @@
 .container{
     text-align: center;
+    margin: auto;
 }
 
 h1{
@@ -16,4 +17,10 @@ h1{
 .password-container{
     width: 50vw;
     font-size: 3vw;
+}
+
+button{
+    height: 7vw;
+    width: 20vw;
+    font-size: 5vw;
 }

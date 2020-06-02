@@ -13,16 +13,21 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button'
 import { MatRadioModule } from '@angular/material/radio'
 import { MatSelectModule } from '@angular/material/select'
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatCardModule } from '@angular/material/card';
 
 
 import { IndexComponent } from './components/index/index.component';
 import { LoginComponent } from './components/login/login.component';
+import { MgrComponent } from './components/mgr/mgr.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
-    LoginComponent
+    LoginComponent,
+    MgrComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +39,10 @@ import { LoginComponent } from './components/login/login.component';
     MatInputModule,
     MatButtonModule,
     MatRadioModule,
-    MatSelectModule
+    MatSelectModule,
+    MatSnackBarModule,
+    MatSidenavModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
