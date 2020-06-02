@@ -1,34 +1,17 @@
 <mat-drawer-container class="container" [hasBackdrop]="true">
     <mat-drawer #drawer [mode]="'side'">
-        <button mat-raised-button>图书管理</button>
+        <button mat-raised-button (click)="showBook()">图书管理</button>
         <p></p>
-        <button mat-raised-button>人员管理</button>
+        <button mat-raised-button (click)="showPeople()">人员管理</button>
         <p></p>
-        <button mat-raised-button>借阅管理</button>
+        <button mat-raised-button (click)="showBorrowReturn()">借阅管理</button>
     </mat-drawer>
     <mat-drawer-content>
       <button mat-raised-button (click)="drawer.toggle()">侧边栏</button>
 
       <hr>
-      <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>余雀堂</mat-card-title>
-          <mat-card-subtitle>珍稀 Dog</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-        <mat-card-content>
-          <p>
-            测试卡片，按钮可点击
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-raised-button color="primary" (click)="like()">LIKE</button>
-          <button mat-raised-button color="accent" (click)="share()">SHARE</button>
-        </mat-card-actions>
-      </mat-card>
-
-
-
+      <app-book-mgr-index *ngIf="showBookMgr"></app-book-mgr-index>
+      <app-people-mgr-index *ngIf="showPeopleMgr"></app-people-mgr-index>
+      <app-borrow-return-mgr-index *ngIf="showBorrowReturnMgr"></app-borrow-return-mgr-index>
     </mat-drawer-content>
   </mat-drawer-container>

@@ -21,13 +21,19 @@ import { MatCardModule } from '@angular/material/card';
 import { IndexComponent } from './components/index/index.component';
 import { LoginComponent } from './components/login/login.component';
 import { MgrComponent } from './components/mgr/mgr.component';
+import { BookMgrIndexComponent } from './components/book-mgr/book-mgr-index/book-mgr-index.component';
+import { PeopleMgrIndexComponent } from './components/people-mgr/people-mgr-index/people-mgr-index.component';
+import { BorrowReturnMgrIndexComponent } from './components/borrow-return-mgr/borrow-return-mgr-index/borrow-return-mgr-index.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
     LoginComponent,
-    MgrComponent
+    MgrComponent,
+    BookMgrIndexComponent,
+    PeopleMgrIndexComponent,
+    BorrowReturnMgrIndexComponent
   ],
   imports: [
     BrowserModule,

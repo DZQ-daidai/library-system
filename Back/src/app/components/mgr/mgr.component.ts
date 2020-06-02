@@ -9,6 +9,11 @@ import {MatSnackBar} from '@angular/material/snack-bar'; //SnackBar
 })
 export class MgrComponent implements OnInit {
   mode :string= "side";
+
+  showBookMgr:boolean=false;
+  showPeopleMgr:boolean=false;
+  showBorrowReturnMgr:boolean=false;
+
   constructor(private _snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
@@ -24,5 +29,23 @@ export class MgrComponent implements OnInit {
     this._snackBar.open("分享堂堂", "测试完毕", {
       duration: 10000,
     });
+  }
+
+  showBook(){
+    this.showBookMgr = true;
+    this.showPeopleMgr = false;
+    this.showBorrowReturnMgr = false;
+  }
+
+  showPeople(){
+    this.showBookMgr = false;
+    this.showPeopleMgr = true;
+    this.showBorrowReturnMgr = false;
+  }
+
+  showBorrowReturn(){
+    this.showBookMgr = false;
+    this.showPeopleMgr = false;
+    this.showBorrowReturnMgr = true;
   }
 }
