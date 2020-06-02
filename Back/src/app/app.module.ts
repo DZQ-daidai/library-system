@@ -16,6 +16,7 @@ import { MatSelectModule } from '@angular/material/select'
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 
 import { IndexComponent } from './components/index/index.component';
@@ -24,6 +25,8 @@ import { MgrComponent } from './components/mgr/mgr.component';
 import { BookMgrIndexComponent } from './components/book-mgr/book-mgr-index/book-mgr-index.component';
 import { PeopleMgrIndexComponent } from './components/people-mgr/people-mgr-index/people-mgr-index.component';
 import { BorrowReturnMgrIndexComponent } from './components/borrow-return-mgr/borrow-return-mgr-index/borrow-return-mgr-index.component';
+import { BookboxComponent } from './components/book-mgr/bookbox/bookbox.component';
+import { PeopleboxComponent } from './components/people-mgr/peoplebox/peoplebox.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,9 @@ import { BorrowReturnMgrIndexComponent } from './components/borrow-return-mgr/bo
     MgrComponent,
     BookMgrIndexComponent,
     PeopleMgrIndexComponent,
-    BorrowReturnMgrIndexComponent
+    BorrowReturnMgrIndexComponent,
+    BookboxComponent,
+    PeopleboxComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +53,8 @@ import { BorrowReturnMgrIndexComponent } from './components/borrow-return-mgr/bo
     MatSelectModule,
     MatSnackBarModule,
     MatSidenavModule,
-    MatCardModule
+    MatCardModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

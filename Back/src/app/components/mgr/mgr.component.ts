@@ -10,6 +10,7 @@ import {MatSnackBar} from '@angular/material/snack-bar'; //SnackBar
 export class MgrComponent implements OnInit {
   mode :string= "side";
 
+  showIndexMgr:boolean=false;
   showBookMgr:boolean=false;
   showPeopleMgr:boolean=false;
   showBorrowReturnMgr:boolean=false;
@@ -31,19 +32,29 @@ export class MgrComponent implements OnInit {
     });
   }
 
+  showIndex(){
+    this.showIndexMgr = true;
+    this.showBookMgr = false;
+    this.showPeopleMgr = false;
+    this.showBorrowReturnMgr = false;
+  }
+
   showBook(){
+    this.showIndexMgr = false;
     this.showBookMgr = true;
     this.showPeopleMgr = false;
     this.showBorrowReturnMgr = false;
   }
 
   showPeople(){
+    this.showIndexMgr = false;
     this.showBookMgr = false;
     this.showPeopleMgr = true;
     this.showBorrowReturnMgr = false;
   }
 
   showBorrowReturn(){
+    this.showIndexMgr = false;
     this.showBookMgr = false;
     this.showPeopleMgr = false;
     this.showBorrowReturnMgr = true;

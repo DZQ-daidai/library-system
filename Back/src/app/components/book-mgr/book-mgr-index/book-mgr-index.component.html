@@ -1,1 +1,18 @@
 <p>这里是图书管理！</p>
+
+<mat-form-field class="search-box">
+    <mat-label>搜索</mat-label>
+    <input matInput [(ngModel)]="searchValue" placeholder="例如： 高等数学">
+    <button mat-icon-button matSuffix (click)="doSearch()" [attr.aria-label]="'Search'" [attr.aria-pressed]="hide">
+    <mat-icon matSuffix>send</mat-icon>
+    </button>
+</mat-form-field>
+
+<mat-paginator [length]="100"
+              [pageSize]="10"
+              [pageSizeOptions]="[5, 10, 25, 100]">
+</mat-paginator>
+
+<div class="book-container" *ngFor="let BookID of showBooks">
+    <app-bookbox [BookID]="BookID"></app-bookbox>
+</div>

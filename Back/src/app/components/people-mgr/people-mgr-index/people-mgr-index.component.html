@@ -1,1 +1,17 @@
 <p>这里是人员管理！</p>
+<mat-form-field class="search-box">
+    <mat-label>搜索</mat-label>
+    <input matInput placeholder="例如： 余大佬">
+    <button mat-icon-button matSuffix (click)="doSearch()" [attr.aria-label]="'Search'" [attr.aria-pressed]="hide">
+    <mat-icon matSuffix>send</mat-icon>
+    </button>
+</mat-form-field>
+
+<mat-paginator [length]="100"
+              [pageSize]="10"
+              [pageSizeOptions]="[5, 10, 25, 100]">
+</mat-paginator>
+
+<div class="people-container" *ngFor="let PeopleID of Peoples">
+    <app-peoplebox [PeopleID]="PeopleID"></app-peoplebox>
+</div>

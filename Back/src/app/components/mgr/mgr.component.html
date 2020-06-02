@@ -1,5 +1,7 @@
 <mat-drawer-container class="container" [hasBackdrop]="true">
     <mat-drawer #drawer [mode]="'side'">
+        <button mat-raised-button (click)="showIndex()">主页</button>
+        <p></p>
         <button mat-raised-button (click)="showBook()">图书管理</button>
         <p></p>
         <button mat-raised-button (click)="showPeople()">人员管理</button>

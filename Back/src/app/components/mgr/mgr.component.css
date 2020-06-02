@@ -1,25 +1,14 @@
 .container {
-    text-align: center;
     margin: auto;
     height: 97vh;
 }
-  
+
 mat-drawer-content {
     padding: 10px;
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
 mat-drawer{
     padding: 20px;
-}
-
-.example-card {
-    max-width: 200px;
-  }
-  
-.example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
 }
